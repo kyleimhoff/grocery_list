@@ -1,0 +1,18 @@
+<h1>Edit Your Post<h1>
+
+<form action="/lists/<%= @lists.id %>" method='POST'>
+<input id="hidden" type="hidden" name="_method" value="patch">
+Title: <input type='text' value="<%= @list.title %>" name='title'><br>
+<label>List</label><br>
+1. <input type='text' value="<%= @list.list1 %>" name='list1'><br>
+2. <input type='text' value="<%= @list.list2 %>" name='list2'><br>
+3. <input type='text' value="<%= @list.list3 %>" name='list3'><br>
+4. <input type='text' value="<%= @list.list4 %>" name='list4'><br>
+5. <input type='text' value="<%= @list.list5 %>" name='list5'><br>
+6. <input type='text' value="<%= @list.list6 %>" name='list6'><br>
+7. <input type='text' value="<%= @list.list7 %>" name='list7'><br>
+8. <input type='text' value="<%= @list.list8 %>" name='list8'><br>
+9. <input type='text' value="<%= @list.list9 %>" name='list9'><br>
+10. <input type='text' value="<%= @list.list10 %>" name='list10'><br>
+<input type='submit' value='Post'>
+</form>

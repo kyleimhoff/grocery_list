@@ -1,0 +1,14 @@
+<% @lists.each do |list| %>
+    <h1><a href="/lists/<%= list.id %>" class="button"><%= list.title%></a><h1>
+    <h3>1. <%= list.list1 %><h3>
+    <h3>2. <%= list.list2 %><h3>
+    <h3>3. <%= list.list3 %><h3>
+    <h3>4. <%= list.list4 %><h3>
+    <h3>5. <%= list.list5 %><h3>
+    <h3>6. <%= list.list6 %><h3>
+    <h3>7. <%= list.list7 %><h3>
+    <h3>8. <%= list.list8 %><h3>
+    <h3>9. <%= list.list9 %><h3>
+    <h3>10. <%= list.list10 %><h3>
+<%end%>
+<button><a href="/lists/new" class="button">Create New List</a></button>

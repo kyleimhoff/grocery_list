@@ -1,0 +1,18 @@
+<h1><%= @list.title %><h1><br>
+<h3>1. <%= @list.list1 %><h3><br>
+    <h3>2. <%= @list.list2 %><h3><br>
+    <h3>3. <%= @list.list3 %><h3><br>
+    <h3>4. <%= @list.list4 %><h3><br>
+    <h3>5. <%= @list.list5 %><h3><br>
+    <h3>6. <%= @list.list6 %><h3><br>
+    <h3>7. <%= @list.list7 %><h3><br>
+    <h3>8. <%= @list.list8 %><h3><br>
+    <h3>9. <%= @list.list9 %><h3><br>
+    <h3>10. <%= @list.list10 %><h3><br>
+<button><a href="/lists" class="button">See All Lists</a></button>
+<form method='post' action="/lists/<%= @list.id %>">
+    <input id="hidden" type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete List">
+</form>
+
+
